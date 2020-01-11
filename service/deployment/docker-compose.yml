@@ -13,7 +13,7 @@ services:
     volumes:
         - ./database:/var/lib/postgresql/
   scidash-virgo:
-    image: metacell/scidash_virgo:v5.0.0
+    image: metacell/scidash_virgo:latest
     container_name: scidash_virgo
     expose:
         - 8080
