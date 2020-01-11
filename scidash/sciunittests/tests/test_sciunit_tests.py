@@ -484,4 +484,4 @@ class SciunitTestMatchingClassObjects(TestCase):
         parsed_response = response.json()
 
         self.assertEqual(len(parsed_response), 1)
-        self.assertEqual(1, 2) # test for travis integration test failing
+        self.assertEqual(1, 2)  # test for travis integration test failing
