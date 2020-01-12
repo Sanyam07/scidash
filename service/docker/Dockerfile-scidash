@@ -36,6 +36,8 @@ USER developer
 
 # COPYING PROJECT
 WORKDIR $APP_DIR
+RUN echo "${targetBranch}" "${originBranch}" "${defaultBranch}"
+RUN echo ${targetBranch}, ${originBranch}, ${defaultBranch}
 RUN $APP_DIR/copy.sh https://github.com/Metacell/scidash.git "${targetBranch}" "${originBranch}" "${defaultBranch}"
 
 
